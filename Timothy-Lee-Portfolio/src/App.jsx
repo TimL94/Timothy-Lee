@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Header from './components/Header/header.jsx'
 import Nav from './components/Nav/nav.jsx'
+import Body from './components/Body/body.jsx'
 
 function App() {
   return (
     <div>
-      <Nav />
+      <Body />
     </div>
     
   )

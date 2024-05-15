@@ -1,30 +1,56 @@
 import { useState } from "react";
+import './nav.css'
 
 
-export default function Nav() {
+export default function Nav({ currentPage, handlePageChange }) {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Timothy Lee</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+            <nav className="navbar navbar-expand-lg navbar-light bg-info p-4">
+                <a 
+                className= {currentPage === 'Home' ? 'nav-link active' : 'nav-link'} 
+                href="#Home"
+                onClick={() => handlePageChange('Home')}
+                >
+                    Timothy Lee
+                    </a>
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a 
+                        className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} 
+                        href="#Projects"
+                        onClick={() => handlePageChange('Projects')}
+                        >
+                            Projects
+                            </a>
+                    </li>
+                    <li className="nav-item">
+                        <a 
+                       className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
+                       href="#About"
+                       onClick={() => handlePageChange('About')}
+                        >
+                            About
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li className="nav-item">
+                        <a 
+                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} 
+                        href="#Contact"
+                        onClick={() => handlePageChange('Contact')}
+                        >
+                            Contact
+                            </a>
+                    </li>
+                    <li className="nav-item">
+                        <a 
+                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} 
+                        href="#Resume"
+                        onClick={() => handlePageChange('Resume')}
+                        >
+                            Resume
+                            </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     )
