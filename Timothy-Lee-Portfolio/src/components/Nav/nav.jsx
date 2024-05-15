@@ -1,15 +1,11 @@
-import { useState } from "react";
-import './nav.css'
-
-
 export default function Nav({ currentPage, handlePageChange }) {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-info p-4">
                 <a 
-                className= {currentPage === 'Home' ? 'nav-link active' : 'nav-link'} 
-                href="#Home"
-                onClick={() => handlePageChange('Home')}
+                className= {currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
+                href="#About"
+                onClick={() => handlePageChange('About')}
                 >
                     Timothy Lee
                     </a>

@@ -1,19 +1,17 @@
 import { useState } from "react";
 import Nav from "../Nav/nav.jsx";
-import About from "../About/about.jsx";
-import Home from "../Home/home.jsx";
-import Contact from "../Contact/contact.jsx";
-import Projects from "../Projects/projects.jsx";
-import Resume from "../Resume/resume.jsx";
+import About from "../Pages/About/about.jsx";
+import Contact from "../Pages/Contact/contact.jsx";
+import Projects from "../Pages/Projects/projects.jsx";
+import Resume from "../Pages/Resume/resume.jsx";
+import Footer from "../Footer/footer.jsx";
 
 
 export default function Body() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />
-        } else if (currentPage === 'About'){
+        if (currentPage === 'About'){
             return <About />
         } else if(currentPage === 'Contact'){
             return <Contact />
@@ -30,7 +28,8 @@ export default function Body() {
     return (
         <div>
             <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
-            <main className="mx-3">{renderPage()}</main>
+            <div className="container mt-2">{renderPage()}</div>
+            <Footer />
         </div>
     )
 }
