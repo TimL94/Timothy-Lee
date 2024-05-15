@@ -4,6 +4,7 @@ import About from "../About/about.jsx";
 import Home from "../Home/home.jsx";
 import Contact from "../Contact/contact.jsx";
 import Projects from "../Projects/projects.jsx";
+import Resume from "../Resume/resume.jsx";
 
 
 export default function Body() {
@@ -18,6 +19,8 @@ export default function Body() {
             return <Contact />
         } else if(currentPage === 'Projects'){
             return <Projects />
+        } else if(currentPage === 'Resume'){
+            return <Resume />
         }
     }
 
