@@ -1,26 +1,16 @@
 import Card from "../../Card/card"
+import { projects } from "../../../assets/js/projects"
 
 export default function Projects(){
     return(
         <div className="row text-center">
-            <div className="col-sm-6 ">
-                <Card cardTitle='Project 1'/>
-            </div>
-            <div className="col-sm-6">
-                <Card cardTitle='Project 2'/>
-            </div>
-            <div className="col-sm-6">
-                <Card cardTitle='Project 3'/>
-            </div>
-            <div className="col-sm-6">
-                <Card cardTitle='Project 4'/>
-            </div>
-            <div className="col-sm-6">
-                <Card cardTitle='Project 5'/>
-            </div>
-            <div className="col-sm-6">
-                <Card cardTitle='Project 6'/>
-            </div>
+            {projects.map((project) => {
+
+                return(<div className="col-sm-6 " key={project.project_id}>
+                    <Card cardTitle={project.project_title} gitHubUrl={project.repo} deployedUrl={project.deployedUrl} image={project.image}/>
+                </div>
+                )
+            })}
         </div>
     )
 }
