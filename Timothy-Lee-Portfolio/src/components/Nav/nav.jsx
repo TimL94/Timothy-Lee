@@ -12,7 +12,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a 
-                        className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} 
+                        className={currentPage === 'Projects' ? 'nav-link active text-light' : 'nav-link'} 
                         href="#Projects"
                         onClick={() => handlePageChange('Projects')}
                         >
@@ -21,7 +21,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                     </li>
                     <li className="nav-item">
                         <a 
-                       className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
+                       className={currentPage === 'About' ? 'nav-link active text-light' : 'nav-link'} 
                        href="#About"
                        onClick={() => handlePageChange('About')}
                         >
@@ -30,7 +30,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                         </li>
                     <li className="nav-item">
                         <a 
-                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} 
+                        className={currentPage === 'Contact' ? 'nav-link active text-light' : 'nav-link'} 
                         href="#Contact"
                         onClick={() => handlePageChange('Contact')}
                         >
@@ -39,7 +39,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                     </li>
                     <li className="nav-item">
                         <a 
-                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} 
+                        className={currentPage === 'Resume' ? 'nav-link active text-light' : 'nav-link'} 
                         href="#Resume"
                         onClick={() => handlePageChange('Resume')}
                         >

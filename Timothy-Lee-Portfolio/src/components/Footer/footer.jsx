@@ -5,7 +5,7 @@ import codeCademy from '../../assets/images/codecademy.svg'
 export default function Footer(){
     return(
         <div className="footer d-flex justify-content-center mt-4">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-5">
                             <a class="nav-link" href="https://github.com/TimL94" target='_blank'>

@@ -1,7 +1,7 @@
-import testImage from '../../assets/images/banner.jpg'
+import React from 'react'
 import './card.css'
 
-export default function Card({ cardTitle, cardImage, gitHubUrl, deployedUrl, image }){
+export default function Card({ cardTitle, gitHubUrl, deployedUrl, image }){
     return(
         <div className="card mt-2 border-dark">
             <div className="card-body">
@@ -9,8 +9,8 @@ export default function Card({ cardTitle, cardImage, gitHubUrl, deployedUrl, ima
                 <img className="card-img-top card-img border border-dark" src={image}></img>
             </div>
             <div className="card-body custom-div">
-                <a href={gitHubUrl} class="card-link" target='_blank'>Repository</a>
-                <a href={deployedUrl} class="card-link" target='_blank'>Deployed Application</a>
+                <a href={gitHubUrl} className="card-link" target='_blank' rel="noopener noreferrer">Repository</a>
+                <a href={deployedUrl} className="card-link" target='_blank' rel="noopener noreferrer">Deployed Application</a>
             </div>
         </div>
     )
