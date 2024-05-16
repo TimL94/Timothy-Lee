@@ -1,32 +1,28 @@
+import githubSvg from '../../assets/images/github-mark.svg'
+import linkedInSvg from '../../assets/images/linkedin.svg'
+import codeCademy from '../../assets/images/codecademy.svg'
+
 export default function Footer(){
     return(
         <div className="footer d-flex justify-content-center mt-4">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                <h3>
-                                    Github
-                                </h3>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="https://github.com/TimL94" target='_blank'>
+                                <img src={githubSvg}></img>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <h3>
-                                    LinkedIn
-                                </h3>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="https://www.linkedin.com/in/tim-lee-67a4a923b/" target='_blank'>
+                                <img src={linkedInSvg}></img>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <h3>
-                                    Code Cademy
-                                </h3>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="https://www.codecademy.com/profiles/Tdlee94#" target='_blank'>
+                                <img src={codeCademy}></img>
                             </a>
                         </li>
                     </ul>
-                </div>
             </nav>
         </div>
     )
