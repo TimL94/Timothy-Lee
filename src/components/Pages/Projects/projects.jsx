@@ -1,6 +1,7 @@
 import Card from "../../Card/card"
 import { projects } from "../../../assets/js/projects"
 
+//renders each of my projects after inporting the objects
 export default function Projects(){
     return(
         <div className="row text-center">

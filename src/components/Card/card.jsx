@@ -1,6 +1,7 @@
 import React from 'react'
 import './card.css'
 
+// creates a uniform card for all projects and populates each card with relevant information. 
 export default function Card({ cardTitle, gitHubUrl, deployedUrl, image }){
     return(
         <div className="card mt-2 border-dark">

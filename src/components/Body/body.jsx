@@ -6,7 +6,7 @@ import Projects from "../Pages/Projects/projects.jsx";
 import Resume from "../Pages/Resume/resume.jsx";
 import Footer from "../Footer/footer.jsx";
 
-
+// renders the main body and uses the renderPage function to determine which component will be loaded based on what the user has selected
 export default function Body() {
     const [currentPage, setCurrentPage] = useState('About');
 

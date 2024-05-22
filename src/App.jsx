@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import Nav from './components/Nav/nav.jsx'
 import Body from './components/Body/body.jsx'
 
+// initializes app and renders the body component
 function App() {
   return (
     <div>

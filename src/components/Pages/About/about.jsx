@@ -1,6 +1,7 @@
 import me from '../../../assets/images/me.png'
 import './about.css'
 
+// renders an image of myself and a short paragraph
 export default function About() {
     return(
         <div className="row d-flex text-center">

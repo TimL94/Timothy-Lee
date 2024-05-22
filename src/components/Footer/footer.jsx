@@ -2,6 +2,7 @@ import githubSvg from '../../assets/images/github-mark.svg'
 import linkedInSvg from '../../assets/images/linkedin.svg'
 import codeCademy from '../../assets/images/codecademy.svg'
 
+// imports SVG files for github linked in and codecademy to be used as link achors to my personal profiles.
 export default function Footer(){
     return(
         <div className="footer d-flex justify-content-center mt-4">

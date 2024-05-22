@@ -1,18 +1,21 @@
 import { useState } from "react";
 
-
+// uses a regex expression to validate email inputs
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 
   }
 
+  // creates a form for the user to submit their name email and brief message to me if they are interested in an interview
+  // creates react state variables fro email name text and errorMessages that are able to be updated through user interaction with the form
   function Form() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [ text, setText] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
+    // captures user input and assigns it to the appropriate variable
     const inputHandler = (event) => {
         const { target } = event;
         const inputType = target.name;
@@ -27,6 +30,7 @@ function validateEmail(email) {
         }
       }
 
+      // ensures that all inputs are correct before submission
     const fromSubmitHandler = (event) => {
         event.preventDefault();
 
@@ -44,6 +48,8 @@ function validateEmail(email) {
         setName('');
         setText('');
     };
+
+    // renders the page and uses above functions
     return (
         <div className="container">
             <form className="form" onSubmit={fromSubmitHandler}>

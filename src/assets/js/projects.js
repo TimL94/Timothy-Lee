@@ -5,6 +5,7 @@ import techBlog from '../images/techblog.jfif'
 import quiz from '../images/codingquiz.jfif'
 import schedule from '../images/schedule.jfif'
 
+// after all images are imported an object is created and exported for each project to be used in the projects component
 export const projects = [
     {
         project_title: 'Relocare',

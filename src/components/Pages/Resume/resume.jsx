@@ -1,5 +1,5 @@
 
-
+// renders my relevant skills and allows user to download a copy of my resume.
 export default function Resume(){
     return(
         <div className="">

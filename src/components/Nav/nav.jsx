@@ -1,4 +1,8 @@
 export default function Nav({ currentPage, handlePageChange }) {
+
+    // renders the nav bar and upadtes nav elements depending on which page is the current.
+    // current page text is changed from black to white to indicate that it is active
+    // also passes current page info up to the body component
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-info p-4">
