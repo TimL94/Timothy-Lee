@@ -1,7 +1,9 @@
+import Form from "../../Form/form"
+
 export default function Contact() {
     return(
         <div>
-            contact
+            <Form />
         </div>
     )
 };
