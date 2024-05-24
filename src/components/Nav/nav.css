@@ -1,0 +1,6 @@
+@media (max-width: 576px){
+    .nav-item{
+        margin:auto;
+        align-self: flex-end;
+    }
+}

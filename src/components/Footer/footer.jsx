@@ -1,6 +1,7 @@
 import githubSvg from '../../assets/images/github-mark.svg'
 import linkedInSvg from '../../assets/images/linkedin.svg'
 import codeCademy from '../../assets/images/codecademy.svg'
+import './footer.css'
 
 // imports SVG files for github linked in and codecademy to be used as link achors to my personal profiles.
 export default function Footer(){

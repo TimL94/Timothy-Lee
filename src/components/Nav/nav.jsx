@@ -1,3 +1,5 @@
+import './nav.css'
+
 export default function Nav({ currentPage, handlePageChange }) {
 
     // renders the nav bar and upadtes nav elements depending on which page is the current.
