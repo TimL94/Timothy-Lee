@@ -12,7 +12,6 @@ export default function About() {
                 </h1>
             </div>
             <div className="col-sm-7 m-1">
-                <h5 className='text-left'>
                     <p>
                         My name is Timothy Lee, I am a 30 year old aspiring software developer from New Hampshire.
                         I was first introduced to software development by my father through first robotics. 
@@ -23,7 +22,7 @@ export default function About() {
                         bootcamp through UNH. I am planning to become AWS certified once the course is completed
                         and then I will be applying for junior dev jobs.
                     </p>
-                </h5>
+
             </div>
         </div>
     )

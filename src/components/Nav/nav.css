@@ -3,4 +3,7 @@
         margin:auto;
         align-self: flex-end;
     }
+    .navbar {
+        text-align: center;
+    }
 }
