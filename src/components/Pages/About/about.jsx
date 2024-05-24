@@ -13,14 +13,16 @@ export default function About() {
             </div>
             <div className="col-sm-7 m-1">
                 <h5 className='text-left'>
-                <p className="indent">My name is Timothy Lee, I am a 30 year old aspiring software developer from New Hampshire.
-                    I was first introduced to software development by my father through first robotics. 
-                    My father is a developer and was the coach of the team, I had a lot of fun working on the robots and competing.
-                    it wasn't until I turned 24 that I started really looking into a career change into tech.
-                    My first step was acquiring a computer science degree from Great Bay Community College.
-                    My next step to further my learning was taking and completing the full stack development
-                    bootcamp through UNH. I am planning to become AWS certified once the course is completed
-                    and then I will be applying for junior dev jobs.</p>
+                    <p>
+                        My name is Timothy Lee, I am a 30 year old aspiring software developer from New Hampshire.
+                        I was first introduced to software development by my father through first robotics. 
+                        My father is a developer and was the coach of the team, I had a lot of fun working on the robots and competing.
+                        it wasn't until I turned 24 that I started really looking into a career change into tech.
+                        My first step was acquiring a computer science degree from Great Bay Community College.
+                        My next step to further my learning was taking and completing the full stack development
+                        bootcamp through UNH. I am planning to become AWS certified once the course is completed
+                        and then I will be applying for junior dev jobs.
+                    </p>
                 </h5>
             </div>
         </div>
