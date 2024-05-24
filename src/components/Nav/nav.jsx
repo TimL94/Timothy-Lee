@@ -14,43 +14,43 @@ export default function Nav({ currentPage, handlePageChange }) {
                     Timothy Lee
                     </a>
                 <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <a 
-                        className={currentPage === 'Projects' ? 'nav-link active text-light' : 'nav-link'} 
-                        href="#Projects"
-                        onClick={() => handlePageChange('Projects')}
-                        >
-                            Projects
-                            </a>
-                    </li>
-                    <li className="nav-item">
-                        <a 
-                       className={currentPage === 'About' ? 'nav-link active text-light' : 'nav-link'} 
-                       href="#About"
-                       onClick={() => handlePageChange('About')}
-                        >
-                            About
-                            </a>
+                        <li className="nav-item">
+                            <a 
+                            className={currentPage === 'Projects' ? 'nav-link active text-light' : 'nav-link'} 
+                            href="#Projects"
+                            onClick={() => handlePageChange('Projects')}
+                            >
+                                Projects
+                                </a>
                         </li>
-                    <li className="nav-item">
-                        <a 
-                        className={currentPage === 'Contact' ? 'nav-link active text-light' : 'nav-link'} 
-                        href="#Contact"
-                        onClick={() => handlePageChange('Contact')}
-                        >
-                            Contact
-                            </a>
-                    </li>
-                    <li className="nav-item">
-                        <a 
-                        className={currentPage === 'Resume' ? 'nav-link active text-light' : 'nav-link'} 
-                        href="#Resume"
-                        onClick={() => handlePageChange('Resume')}
-                        >
-                            Resume
-                            </a>
-                    </li>
-                </ul>
+                        <li className="nav-item">
+                            <a 
+                        className={currentPage === 'About' ? 'nav-link active text-light' : 'nav-link'} 
+                        href="#About"
+                        onClick={() => handlePageChange('About')}
+                            >
+                                About
+                                </a>
+                            </li>
+                        <li className="nav-item">
+                            <a 
+                            className={currentPage === 'Contact' ? 'nav-link active text-light' : 'nav-link'} 
+                            href="#Contact"
+                            onClick={() => handlePageChange('Contact')}
+                            >
+                                Contact
+                                </a>
+                        </li>
+                        <li className="nav-item">
+                            <a 
+                            className={currentPage === 'Resume' ? 'nav-link active text-light' : 'nav-link'} 
+                            href="#Resume"
+                            onClick={() => handlePageChange('Resume')}
+                            >
+                                Resume
+                                </a>
+                        </li>
+                    </ul>
             </nav>
         </div>
     )
