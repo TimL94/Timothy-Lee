@@ -1,3 +1,5 @@
+import resumePDF from '../../../assets/pdf/Timothy-Lee.pdf'
+
 
 // renders my relevant skills and allows user to download a copy of my resume.
 export default function Resume(){
@@ -40,9 +42,9 @@ export default function Resume(){
                 </ul>
             </div>
             to download a copy of my resume,
-            <a href="../../public/assets/pdf/Timothy-Lee.pdf" download>
-                <br></br><span>Click here</span>
-            </a>
+            <span><a href={resumePDF} download>
+                here
+            </a></span>
         </div>
     )
 }
