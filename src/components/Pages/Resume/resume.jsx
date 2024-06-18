@@ -43,7 +43,7 @@ export default function Resume(){
             </div>
             to download a copy of my resume,
             <span><a href={resumePDF} download>
-                here
+                Click Here
             </a></span>
         </div>
     )
