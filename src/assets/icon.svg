@@ -1,0 +1,10 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle border -->
+  <circle cx="250" cy="250" r="205" fill="none" stroke="black" stroke-width="10" stroke-opacity="1" />
+
+  <!-- Circle background -->
+  <circle cx="250" cy="250" r="200" fill="#17a2b8" />
+
+  <!-- Text TL -->
+  <text x="255" y="270" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="310" font-weight="bold" fill="black">TL</text>
+</svg>
