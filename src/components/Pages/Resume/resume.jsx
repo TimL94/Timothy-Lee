@@ -40,7 +40,7 @@ export default function Resume(){
                 </ul>
             </div>
             to download a copy of my resume,
-            <a href="../../public/assets/pdf/Timothy-lee.pdf" download>
+            <a href="../../public/assets/pdf/Timothy-Lee.pdf" download>
                 <br></br><span>Click here</span>
             </a>
         </div>
