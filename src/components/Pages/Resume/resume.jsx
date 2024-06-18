@@ -2,7 +2,7 @@
 // renders my relevant skills and allows user to download a copy of my resume.
 export default function Resume(){
     return(
-        <div className="">
+        <div className="d-flex justify-content-center align-items-center flex-column">
             <div>
                 <h3>
                     Stacks
@@ -40,7 +40,7 @@ export default function Resume(){
                 </ul>
             </div>
             to download a copy of my resume,
-            <a href='../../assets/pdf/Resume.pdf' download>
+            <a href="../../public/assets/pdf/TImothy-lee.pdf" download>
                 <br></br><span>Click here</span>
             </a>
         </div>

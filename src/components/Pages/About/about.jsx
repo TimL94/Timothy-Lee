@@ -4,14 +4,14 @@ import './about.css'
 // renders an image of myself and a short paragraph
 export default function About() {
     return(
-        <div className="row d-flex flex-column">
+        <div className="row d-flex flex-column justify-contnet-center align-items-center">
             <div className="col-sm-4">
-                <h1>
+                <h1 className='text-center'>
                     About Me
                     <img src={me} className='custom-img mt-2 border border-dark border-round'></img>
                 </h1>
             </div>
-            <div className="col-sm-7 m-1">
+            <div className="col-sm-7 m-1 text-center">
                     <p>
                         My name is Timothy Lee, I am a 30 year old aspiring software developer from New Hampshire.
                         I was first introduced to software development by my father through first robotics. 

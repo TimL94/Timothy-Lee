@@ -53,7 +53,7 @@ function validateEmail(email) {
     return (
         <div className="container">
             <form className="form" onSubmit={fromSubmitHandler}>
-                <div className="form-group row d-flex flex-column">
+                <div className="form-group row d-flex flex-column justify-content-center align-items-center">
                     <div className="col-md-3">
                         <label for="email-input" className="m-2">
                             Email
@@ -99,7 +99,7 @@ function validateEmail(email) {
                           rows="3"
                         />
                     </div>
-                    <div className="col-med-2">
+                    <div className="col-med-2 text-center">
                         <button type="submit" className="btn btn-info my-3">Submit</button>
                     </div>
                 </div>
